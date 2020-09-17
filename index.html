@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <h1 class="main-title">Pokédex</h1>
+            <div class="search-input">
+                <img class="imgPokeball" src="./pokeball-icon.png" alt="pokeball">
+                <input type="search" id="pokeSearch" name="pokeSearch" placeholder="Pokemon..." >
+            </div>
+        </nav>
+        <ul class="navList">
+            <li class="navItem"><button type="button" value="kanto" class="navButtons">Kanto</button></li>
+            <li class="navItem"><button type="button" value="johto" class="navButtons">Johto</button></li>
+            <li class="navItem"><button type="button" value="hoenn" class="navButtons">Hoenn</button></li>
+            <li class="navItem"><button type="button" value="sinnoh" class="navButtons">Sinnoh</button></li>
+            <li class="navItem"><button type="button" value="teselia" class="navButtons">Teselia</button></li>
+            <li class="navItem"><button type="button" value="kalos" class="navButtons">Kalos</button></li>
+        </ul>
+        <!-- Aqui van los botones dinamicos -->
+        <div class="container-type">
+            <div id="btn-container"></div>
+        </div>
+
+    </header>
+    <!-- Aqui los pokemons -->
+    <div id="pokemonContainer"></div>
+
+    <script src="./pokemons.js"></script>
+</body>
+</html>
+

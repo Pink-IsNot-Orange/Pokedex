@@ -1,0 +1,291 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1; /* Firefox */
+}
+
+@font-face {
+    font-family: Pokemon;
+    src: url(./Pokemon_GB.ttf);
+  }
+
+body {
+    font-family: Pokemon;
+    background-color: #313131;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: .7rem;
+    margin-bottom: 0.9em;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: .9rem;
+}
+
+button {
+    background-color: #272727;
+    border-style: hidden;
+    border-radius: 5px;
+}
+
+img {
+    width: auto;
+    height: 100px;
+}
+
+ul { 
+    margin: 20px;
+}
+
+li {
+    font-size: 0.6rem;
+    margin: 1.2em;
+    display: inline;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+i {
+    padding: 0 0.4em 0 0;
+}
+
+.nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #272727;
+    box-shadow: 0 5px 4px -2px rgb(29, 29, 29);
+}
+
+.navList {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.navButtons {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 5em auto 0 auto;
+    cursor: pointer;
+    background-color: rgb(204, 25, 25);
+    color: #fff;
+    padding: 2em 3em;
+}
+
+#pokemonContainer {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    margin: auto;
+    height: 90%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #ce4141;
+    box-shadow: 5px 5px #272727;
+    padding-bottom: 5px;
+}
+
+.ui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    background-color: #8f1f1f;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+
+}
+
+.main-title {
+    text-align: center;
+    margin: 0 1em;
+}
+
+#btn-container {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-content: center;
+    width: 100%;
+}
+
+#pokeSearch {
+    width: 80%;
+    padding: 0.5em;
+    font-size: 1.2rem;
+    border: none;
+    float: right;
+    background: #aa1919;
+    transition: width .5s ease-in-out;
+    color: #fff;
+    border-radius: 5px;
+}
+#pokeSearch:focus {
+    outline: 1px solid red;
+}
+
+.imgPokeball {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    z-index: 99;
+}
+
+.container-type {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.search-input {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    background: #b91313;
+    padding: 2.5em 1em;
+}
+
+
+.filter-btn {
+    margin: 1.2em 1em;
+    padding: .8em 1.5em;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* BUTTON TYPES STYLE */
+.grass {
+    background-color: #78c850;
+}
+.grass>:hover {
+    background-color: #78c850;
+}
+.poison {
+    background-color: #a040a0;
+}
+.poison:hover {
+    background-color: #a040a0;
+}
+.fire {
+    background-color: #f08030;
+}
+.fire:hover {
+    background-color: #f08030;
+}
+.flying {
+    background-color: #90AAD7;
+}
+.flying:hover {
+    background-color: #90AAD7;
+}
+.water {
+    background-color: #6890f0;
+}
+.water:hover {
+    background-color: #6890f0;
+}
+.bug {
+    background-color: #a8b820;
+}
+.bug:hover {
+    background-color: #a8b820;
+}
+.normal {
+    background-color: #a8a878;
+}
+.normal:hover {
+    background-color: #a8a878;
+}
+.electric {
+    background-color: #f8d030;
+}
+.electric:hover {
+    background-color: #f8d030;
+}
+.ground {
+    background-color: #e0c068;
+}
+.ground:hover {
+    background-color: #e0c068;
+}
+.fairy {
+    background-color: #EE99AC;
+}
+.fairy:hover {
+    background-color: #EE99AC;
+}
+.fighting {
+    background-color: #c03028;
+}
+.fighting:hover {
+    background-color: #c03028;
+}
+.psychic {
+    background-color: #f85888;
+}
+.psychic:hover {
+    background-color: #f85888;
+}
+.rock {
+    background-color: #b8a038;
+}
+.rock:hover {
+    background-color: #b8a038;
+}
+.steel {
+    background-color: #9FA9AF;
+}
+.steel:hover {
+    background-color: #9FA9AF;
+}
+.ice {
+    background-color: #98d8d8;
+}
+.ice:hover {
+    background-color: #98d8d8;
+}
+.ghost {
+    background-color: #705898;
+}
+.ghost:hover {
+    background-color: #5a477a;
+}
+.dragon {
+    background-color: #7038f8;
+}
+.dragon:hover {
+    background-color: #6332d4;
+    transition: 250ms;
+}
